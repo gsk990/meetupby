@@ -1,0 +1,139 @@
+body {
+  font: 100% Georgia, "Times New Roman", Times, serif;
+}
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:active {
+  color: #000;
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.05em;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 160%;
+  color: #D90000;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Make site titles the same size if it's an H1 (home) or H2 (internal) */
+h1.site-name,
+h2.site-name {
+  font-size: 260%;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Make it a bit smaller for block headers */
+h2.block-title {
+  font-size: 110%;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2.node-title {
+  font-size: 130%;
+  color: #D90000;
+  text-decoration: none;
+}
+
+h2.node-title a {
+  font-size: 130%;
+  font-weight: normal;
+  color: #D90000;
+  text-decoration: none;
+}
+
+h2.node-title a:hover {
+  font-size: 130%;
+  color: #D90000;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul ul,
+ol ol {
+  padding-top: 0.5em;
+}
+
+.node ol,
+.node ul {
+  padding-left: 1.2em;
+}
+
+.node ul.inline,
+.node ol.inline {
+  padding-left: 0;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol,
+ul, pre, table, address, fieldset {
+  margin-bottom: 15px;
+}
+
+dt, .admin h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+dd {
+  padding-left: 10px;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.submitted {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #666;
+}

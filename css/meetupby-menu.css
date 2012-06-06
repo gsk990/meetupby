@@ -1,0 +1,24 @@
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li.leaf {
+  list-style: none;  
+}
+
+.block-menu-block ul {
+list-style: none;
+
+}
+
+
+.block-menu-block {
+text-transform: uppercase;
+
+}
+
+.block-menu-block li {
+float: left;
+
+}
