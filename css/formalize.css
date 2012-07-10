@@ -19,7 +19,9 @@ textarea {
 button,
 input[type="reset"],
 input[type="submit"],
-input[type="button"] {
+input[type="button"],
+input[type="file"],
+a.more-link {
   -webkit-appearance: none;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;

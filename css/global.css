@@ -29,7 +29,9 @@ h1#page-title {
 
 
 
-#zone-user-wrapper, #zone-branding-wrapper .block-menu, .date-display-single {
+#zone-user-wrapper, #zone-branding-wrapper .block-menu, 
+.front .block-views .views-row-first .date-display-single,
+.view-archive-of-events .date-display-single {
   font-family:arial, helvetica, sans-serif;
   text-shadow: 1px 1px 1px #fff;
 }
@@ -50,7 +52,7 @@ h2 {
   background: url("/sites/all/themes/meetupby/images/top_announcement.png") no-repeat;
   color: #FFFFFF;
   height: 71px;
-  left: 313px;
+  left: 19%;
   padding: 3px 0  0 76px;
   position: absolute;
   top: 0;
@@ -94,7 +96,13 @@ h2 {
   font-family:arial, helvetica, sans-serif;
   text-decoration:none;
   text-transform:capitalize;
-  font-size:18px;
+  font-size:16px;
+  font-weight:700;
+}
+
+.responsive-layout-mobile .views-exposed-form {
+  display:none;
+  text-indent:-9999px;
 }
 
 header .menu a, 
@@ -178,7 +186,8 @@ header .menu a,
   width: 660px;
 }
 
-.view-frontpage  .date-display-single {
+.view-frontpage .date-display-single,
+.view-archive-of-events .block-views .date-display-single {
   color: #555;
   float: left;
   font-size: 36px;
@@ -190,7 +199,23 @@ header .menu a,
   width: 110px;
 }
 
-.views-row-first  .date-display-single {
+.node .date-display-single {
+  color: #fff!important;
+  float: left;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  line-height: 24px;
+  margin-right: 15px;
+  width: 160px;
+  padding:5px;
+  background:#69B2B8;
+}
+
+
+
+.front .block-views .views-row-first .date-display-single,
+.view-archive-of-events .views-row-first .date-display-single {
   color:#000!important;
 }
 
@@ -244,7 +269,6 @@ header .menu a,
   margin: 0 0 0 8px;
   padding: 0 0 4px 8px;
   position: relative;
-  top: -11px;
   width: 194px;
 }
 
@@ -340,6 +364,11 @@ select[size], select[multiple] {
   margin-bottom: 10px;
 }
 
+.field-type-node-reference {
+  display:block;
+  clear:both;
+}
+
 article .field-type-datetime,
 .node-links {
   border-top: 10px solid #69B2B8;
@@ -393,7 +422,8 @@ article .field-type-datetime,
 
 /*sidebar LIs*/
 
-aside .block ul li {
+aside .block ul li,
+.section-content .block ul li {
   margin:0 0 1em 0!important;
   list-style-type:none!important;
 }
@@ -433,11 +463,7 @@ aside .block ul li span,
 
 
 
-.more-link a {
-  font-family:georgia, garamond, serif;
-  font-style: italic;
-  font-size:12px;
-}
+
 
 #region-content .calendar-calendar td .inner div.calendar div, 
 #region-content .calendar-calendar td .inner div.calendar div a, #region-content .view-calendar a {
@@ -640,4 +666,139 @@ padding: 0 5px 5px 0;
   margin-bottom:15px;
   clear:both;
   display:block;
+}
+
+/*general featured/table block styles*/
+
+div.table {
+  overflow:hidden;
+  clear:both;
+}
+
+div.table .view-content {
+  padding:0!important;
+}
+
+div.table li {
+  width:29%;
+  float: left;
+  padding-right: 30px;
+  overflow:hidden;
+  clear:none!important;
+  min-height:220px !important;
+}
+
+.responsive-layout-mobile .table li{
+  width:25%;
+  padding-right:5px;
+}
+
+/*videos*/
+
+.videos-li li {
+  width:30%;
+  float: left;
+  padding-right: 30px;
+  overflow:hidden;
+  min-height: 310px;
+  margin-bottom:50px;
+  clear:none!Important;
+  
+}
+
+.view-id-videos ul {
+  list-style: none;
+}
+
+
+
+/*homepage communities block*/
+
+.view-community-links li {
+  float:left;
+  width:25%;
+}
+
+.view-community-links img {
+  float:left;
+  margin-right:10px;
+}
+
+.view-community-links h4 {
+  font-size:16px;
+}
+
+.view-community-links .view-footer {
+  clear:both;
+  display:block;
+}
+
+
+
+/* inputs*/
+
+.form-actions input {
+  margin-left:5px;
+}
+
+
+/*view styles*/
+
+.view .views-field-field-event a {
+  background: #666;
+  color: #fff;
+  display: inline-block;
+  font-family: arial,helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 3px;
+  text-transform: uppercase;
+  width: auto;
+  text-decoration:none;
+}
+
+
+/*hacks*/
+
+a.more-link,
+.more-link a {/*from formalize.css*/
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  border-radius: 11px;
+  background: #ddd url(../images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px 4px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+  *padding-top: 2px; /* IE7 */
+  *padding-bottom: 0px; /* IE7 */
+  float:right;
+  text-decoration:none;
+}
+
+.more-link:focus,
+.more-link:active,
+.more-link a:focus,
+.more-link a:active {
+  -moz-box-shadow: #06f 0 0 7px;
+  -webkit-box-shadow: #06f 0 0 7px;
+  box-shadow: #06f 0 0 7px;
+  z-index: 1; /* For Opera */
+}
+
+.view-footer .more-link {
+  margin:10px;
+  
 }
